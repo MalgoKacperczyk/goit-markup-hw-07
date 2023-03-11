@@ -22,41 +22,39 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header-wrapper">
-				<a href="./index.html" class="logo-header">
-					<span class="logo-accent">Web</span>
-					Studio
-				</a>
-				<nav class="menu-wrapper">
-					<ul class="menu">
-						<li><a href="./index.html" class="top-navigation-main-page">Agencja</a></li>
+			<div class="container header__wrapper">
+				<div class="logo header__logo">
+					<a href="./index.html">
+						<span class="logo__item--left">Web</span>
+						<span class="logo__item--right-header">Studio</span>
+					</a>
+				</div>
+				<nav class="navigation">
+					<ul class="navigation__list">
+						<li><a href="./index.html" class="navigation__link">Agencja</a></li>
 						<li>
-							<a href="./portfolio.html" class="top-navigation-main-page current underline-portfolio">Portfolio</a>
+							<a href="./portfolio.html" class="navigation__link current">Portfolio</a>
 						</li>
-						<li><a href="#" class="top-navigation-main-page">Kontakt</a></li>
+						<li><a href="#" class="navigation__link">Kontakt</a></li>
 					</ul>
 				</nav>
-				<ul>
-					<div class="contact-wrapper">
-						<li class="mail-wrapper">
-							<a href="mailto:info@devstudio.com" class="top-contact-item">
-								<svg class="mail-icon">
-									<use href="./images/icons.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li>
-							<div class="tel-wrapper">
-								<a href="tel:+48111111111" class="top-contact-item">
-									<svg class="tel-icon">
-										<use href="./images/icons.svg#icon-smartphone"></use>
-									</svg>
-									+48 111 111 111
-								</a>
-							</div>
-						</li>
-					</div>
+				<ul class="contact">
+					<li>
+						<a href="mailto:info@devstudio.com" class="contact__link">
+							<svg class="contact__icon">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a href="tel:+48111111111" class="contact__link">
+							<svg class="contact__icon">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+48 111 111 111
+						</a>
+					</li>
 				</ul>
 			</div>
 		</header>
@@ -293,9 +291,9 @@
 		<footer>
 			<div class="container footer-wrapper">
 				<div class="footer-address">
-					<a href="/index.html" class="logo-footer">
-						<span class="logo-accent">Web</span>
-						<span class="logo-bottom">Studio</span>
+					<a href="/index.html" class="logo">
+						<span class="logo__item--left">Web</span>
+						<span class="logo__item--right-footer">Studio</span>
 					</a>
 					<address class="address-wrapper">
 						<ul>
