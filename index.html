@@ -47,8 +47,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="tel:+48111111111" class="contact__link">
-								<svg class="contact__icon">
+							<a href="tel:+48111111111" class="header-contact__link">
+								<svg class="header-contact__icon">
 									<use href="./images/icons.svg#icon-smartphone"></use>
 								</svg>
 								+48 111 111 111
@@ -61,48 +61,48 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-					<button data-modal-open type="button" class="button-main-page">Zamów usługe</button>
-					<div data-modal class="backdrop is-hidden">
-						<div class="modal">
-							<button data-modal-close type="button" class="modal-close">&#10006;</button>
-							<p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
-							<form name="order_form" autocomplete="off">
-								<label class="input-container">
-									<span class="input-name">Imie</span>
-									<input class="input-text" type="text" name="name" />
-									<svg class="input-icon">
+					<button data-modal-open type="button" class=" button hero__button">Zamów usługe</button>
+					<div data-modal class="hero__backdrop is-hidden">
+						<div class="hero__modal">
+							<button data-modal-close type="button" class="button__modal--close">&#10006;</button>
+							<p class="form__name">Zostaw swoje dane w formularzu poniżej</p>
+							<form name="order-form" autocomplete="off">
+								<label class="input__container">
+									<span class="input__name">Imie</span>
+									<input class="input__content" type="text" name="name" />
+									<svg class="input__icon">
 										<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
 									</svg>
 								</label>
-								<label class="input-container">
-									<span class="input-name">Telefon</span>
-									<input class="input-text" type="tel" name="phone" />
-									<svg class="input-icon">
+								<label class="input__container">
+									<span class="input__name">Telefon</span>
+									<input class="input__content" type="tel" name="phone" />
+									<svg class="input__icon">
 										<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
 									</svg>
 								</label>
-								<label class="input-container">
-									<span class="input-name">Email</span>
-									<input class="input-text" type="email" name="email" />
-									<svg class="input-icon">
+								<label class="input__container">
+									<span class="input__name">Email</span>
+									<input class="input__content" type="email" name="email" />
+									<svg class="input__icon">
 										<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
 									</svg>
 								</label>
 								<label class="textarea">
-									<span class="input-name">Komentarz</span>
-									<textarea class="input-textarea" name="comment" placeholder="Wprowadź tekst" rows="8"></textarea>
+									<span class="input__name">Komentarz</span>
+									<textarea class="input__textarea" name="comment" placeholder="Wprowadź tekst" rows="8"></textarea>
 								</label>
-								<label class="checkbox-container">
-									<input class="checkbox-input" type="checkbox" name="privacy-policy" />
-									<svg class="checkbox-icon">
+								<label class="checkbox__container">
+									<input class="checkbox__input" type="checkbox" name="privacy-policy" />
+									<svg class="checkbox__icon">
 										<use href="./images/icons.svg#icon-icon-check"></use>
 									</svg>
-									<span class="checkbox-text">Oświadczam iż akceptuję</span>
-									<a class="checkbox-link" href="#">Regulamin</a>
+									<span class="checkbox__text">Oświadczam iż akceptuję</span>
+									<a class="checkbox__link" href="#">Regulamin</a>
 									i
-									<a class="checkbox-link" href="#">Politykę Prywatności.</a>
+									<a class="checkbox__link" href="#">Politykę Prywatności.</a>
 								</label>
-								<button class="form-button" type="submit">Wyślij</button>
+								<button class="button form__button" type="submit">Wyślij</button>
 							</form>
 						</div>
 					</div>
@@ -416,31 +416,31 @@
 			</section>
 		</main>
 		<footer>
-			<div class="container footer-wrapper">
-				<div class="footer-address">
+			<div class="container page-footer">
+				<div>
 					<a href="/index.html" class="logo">
 						<span class="logo__item--left">Web</span>
 						<span class="logo__item--right-footer">Studio</span>
 					</a>
-					<address class="address-wrapper">
+					<address class="contact">
 						<ul>
-							<li class="address">
+							<li class="contact__item">
 								<a
 									href="https://goo.gl/maps/RDSqijWgZHZxU6bx8"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
-									class="bottom-adress"
+									class="contact__link contact__link-white"
 								>
 									m. Warszawa, Aleje Jerozolimskie 21
 								</a>
 							</li>
 
-							<li class="address"><a href="mailto:info@example.com" class="bottom-contact">info@example.com</a></li>
-							<li class="address"><a href="tel:+48111111111" class="bottom-contact">+48 111 111 111</a></li>
+							<li class="contact__item"><a href="mailto:info@example.com" class="contact__link">info@example.com</a></li>
+							<li class="contact__item"><a href="tel:+48111111111" class="contact__link">+48 111 111 111</a></li>
 						</ul>
 					</address>
 				</div>
-				<div class="footer-social">
+				<div>
 					<p class="join-us">DOŁĄCZ DO NAS</p>
 					<ul class="social__list social__list--footer">
 						<li>
@@ -473,13 +473,13 @@
 						</li>
 					</ul>
 				</div>
-				<form class="newsletter-form" name="newsletter-signup" autocomplete="off" novalidate>
-					<p class="newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
-					<label class="newsletter-label">
-						<input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
-						<button class="newsletter-button" type="submit">
+				<form name="newsletter-signup" autocomplete="off" novalidate>
+					<p class="newsletter">ZAPISZ SIĘ DO NEWSLETTERA</p>
+					<label class="newsletter__label">
+						<input class="newsletter__input" type="email" name="email" placeholder="E-mail" />
+						<button class="newsletter__button" type="submit">
 							Zapisz się
-							<svg class="newsletter-icon">
+							<svg class="newsletter__icon">
 								<use href="./images/icons.svg#icon-icon-send"></use>
 							</svg>
 						</button>
