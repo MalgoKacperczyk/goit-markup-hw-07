@@ -1,5 +1,5 @@
 .page-header {
-	border-bottom: var(--line-color) solid 1px;
+	border-bottom: $header-underline-color solid 1px;
 
 	&__wrapper {
 		display: flex;
@@ -19,17 +19,17 @@
 		gap: 10px;
 		align-items: center;
 		justify-content: center;
-		color: var(--header-contact-color);
+		color: $text-color-secondary;
 		letter-spacing: 0.02em;
 		font-weight: 500;
 		line-height: 1.14;
-		transition-duration: 250ms;
+		transition-duration: $transition-duration;
 		transition-property: color;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-timing-function: $transition-timing-function;
 	}
 	&__link:hover,
 	&__link:focus {
-		color: var(--accent-color);
+		color: $accent-color;
 	}
 	&__icon {
 		width: 16px;
@@ -38,6 +38,6 @@
 	}
 	&__icon:hover,
 	&__icon:focus {
-		fill: var(--accent-color);
+		fill: $accent-color;
 	}
 }
